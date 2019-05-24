@@ -15,7 +15,7 @@ class MyClass extends React.Component {
         return (
             <section>
                 <Button onClick={this.buttonClick}>
-                    Get me!
+                    Choke me daddy!
                 </Button>
             </section>
         )
