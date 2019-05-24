@@ -1,4 +1,4 @@
 // Import the Button component from this folder and send it down to ./components/index.js
-import Button from './Button';
+import Card from './Card';
 
-export default Button;
+export default Card;
