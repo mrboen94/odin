@@ -3,7 +3,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 // Import our component from this folder
-import Button from './Button';
+import Container from './Container';
+import Button from '../Button';
 
 // Here we describe the stories we want to see of the Button. The component is
 // pretty simple so we will just make two, one with text and one with emojis
@@ -11,10 +12,17 @@ import Button from './Button';
 //
 // .add() takes a name and then a function that should return what you want
 // rendered in the rendering area
-storiesOf('Button')
-	.add('with text', () => (
-		<Button onClick={action('clicked')}>Hello Button</Button>
-	))
-	.add('with emoji', () => (
-		<Button onClick={action('clicked')}>🚿 🚿 🐈 🐈</Button>
+storiesOf('Container')
+	.add('Full vertical container', () => (
+        <div>
+		    <Container fullVertical testColor>
+                <Button onClick={action('clicked')}>Hello Button</Button>
+            </Container>
+            
+        </div>
+    ))
+	.add('Full small container', () => (
+        <Container full small testColor>
+            <Button>Oh my</Button>
+        </Container>
 ));
