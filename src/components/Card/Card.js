@@ -1,32 +1,59 @@
-import React from 'react';
-// Styled components 💅 is library that allows you create components easily and
-// style them, css-in-js style. It's totally optional, but I prefer to use it
-// to build things quickly and have them look great every step of the way.
-import styled from 'styled-components';
+import React from 'react'
+import styled, { css, keyframes } from 'styled-components'
 
-// Style components take CSS in a template string. Even Sass functions with work!
-// Each element is a property of styled, like h3, p, div, etc...
-const ButtonWrapper = styled.button`
-	border-radius: 3px;
-	color: ${props => theme.text};
-	background: eggwhite;
-	padding: 4px 15px;
-	border: 1px solid ${props => theme.border}
-    outline: 3px;
-`;
+const animatedCss = css`
+    opacity: 1;
+    transform: translateY(0);
+`
 
-const theme = {
-    text: "black",
-    border: "gray"
-};
+const primaryCss = css`
+    background-color: #008bf8;
+    color: #fff;
+`
 
-// Components are functions, and they must start with a capital letter
-function Button(props) {
-	// {...props} uses the the ES6 spread operator to send any props you may pass
-	// along without changing any of the contents. This is basically just creating
-	// a copy to pass along
-	return <ButtonWrapper {...props}>{props.children}</ButtonWrapper>;
+const StyledCard = styled.div`
+    width: ${props => (props.big ? '450px' : '300px')};
+    padding: 15px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 250ms all ease-in-out;
+    margin: ${props => (props.noMargin ? 0 : '15px')};
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 1);
+    border-radius: 2px;
+    ${props => props.animated && animatedCss}
+    ${props => props.primary && primaryCss}
+`
+
+class Card extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            animated: false,
+        }
+    }
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState(() => {
+                return { animated: true }
+            })
+        }, this.props.delay)
+    }
+
+    render() {
+        const { delay = 0, noAnimation, primary, noMargin, big, ...props } = this.props
+        return (
+            <StyledCard
+                animated={this.state.animated}
+                delay={delay}
+                primary={primary}
+                noAnimation={noAnimation}
+                big={big}
+                noMargin={noMargin}
+                {...props}
+            />
+        )
+    }
 }
 
-// This export will be picked up in ./index.js
-export default Button;
+export default Card
