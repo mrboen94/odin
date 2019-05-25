@@ -4,6 +4,7 @@ import { action } from '@storybook/addon-actions';
 import Heading from './Heading';
 import Container from '../Container'
 import Flex from '../Flex';
+import Card from '../Card';
 
 storiesOf('Heading')
 	.add('Headings overview', () => (

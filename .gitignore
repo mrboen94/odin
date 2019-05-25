@@ -6,3 +6,4 @@ temp
 dist
 .docz
 *.psd
+/storybook-static/

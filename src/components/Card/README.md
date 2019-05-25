@@ -14,9 +14,10 @@ class MyClass extends React.Component {
     render() {
         return (
             <section>
-                <Button onClick={this.buttonClick}>
-                    Get me!
-                </Button>
+                <Card primary big>
+								<h1>Lorem ipsum dolor amet cliche</h1>
+								umami hell of, pork belly master cleanse biodiesel air plant. Quinoa tumblr VHS kogi microdosing normcore. Portland paleo normcore kinfolk viral bitters, mlkshk chartreuse ennui photo booth. Brooklyn master cleanse shoreditch, marfa williamsburg hashtag heirloom activated charcoal 3 wolf moon ugh intelligentsia DIY synth hot chicken 8-bit.
+            </Card>
             </section>
         )
     }
