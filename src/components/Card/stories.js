@@ -66,4 +66,25 @@ storiesOf('Card')
                 Lorem ipsum dolor amet cliche umami hell of, pork belly master cleanse biodiesel air plant. Quinoa tumblr VHS kogi microdosing normcore. Portland paleo normcore kinfolk viral bitters, mlkshk chartreuse ennui photo booth. Brooklyn master cleanse shoreditch, marfa williamsburg hashtag heirloom activated charcoal 3 wolf moon ugh intelligentsia DIY synth hot chicken 8-bit.
             </Card>
         </Flex>
-    ));
+		))    .add('Themed cards', () => (
+			<Flex>
+					<Card>
+							<h2>standard</h2>Lorem ipsum dolor amet cliche umami hell of, pork belly master cleanse biodiesel air plant. Quinoa tumblr VHS kogi microdosing normcore. Portland paleo normcore kinfolk viral bitters, mlkshk chartreuse ennui photo booth. Brooklyn master cleanse shoreditch, marfa williamsburg hashtag heirloom activated charcoal 3 wolf moon ugh intelligentsia DIY synth hot chicken 8-bit.
+					</Card>
+					<Card primary>
+							<h2>primary</h2>Lorem ipsum dolor amet cliche umami hell of, pork belly master cleanse biodiesel air plant. Quinoa tumblr VHS kogi microdosing normcore. Portland paleo normcore kinfolk viral bitters, mlkshk chartreuse ennui photo booth. Brooklyn master cleanse shoreditch, marfa williamsburg hashtag heirloom activated charcoal 3 wolf moon ugh intelligentsia DIY synth hot chicken 8-bit.
+					</Card>
+					<Card inf>
+							<h2>INF</h2>Lorem ipsum dolor amet cliche umami hell of, pork belly master cleanse biodiesel air plant. Quinoa tumblr VHS kogi microdosing normcore. Portland paleo normcore kinfolk viral bitters, mlkshk chartreuse ennui photo booth. Brooklyn master cleanse shoreditch, marfa williamsburg hashtag heirloom activated charcoal 3 wolf moon ugh intelligentsia DIY synth hot chicken 8-bit.
+					</Card>
+					<Card mat>
+							<h2>MAT</h2>Lorem ipsum dolor amet cliche umami hell of, pork belly master cleanse biodiesel air plant. Quinoa tumblr VHS kogi microdosing normcore. Portland paleo normcore kinfolk viral bitters, mlkshk chartreuse ennui photo booth. Brooklyn master cleanse shoreditch, marfa williamsburg hashtag heirloom activated charcoal 3 wolf moon ugh intelligentsia DIY synth hot chicken 8-bit.
+					</Card>
+					<Card dat>
+							<h2>DAT</h2>Lorem ipsum dolor amet cliche umami hell of, pork belly master cleanse biodiesel air plant. Quinoa tumblr VHS kogi microdosing normcore. Portland paleo normcore kinfolk viral bitters, mlkshk chartreuse ennui photo booth. Brooklyn master cleanse shoreditch, marfa williamsburg hashtag heirloom activated charcoal 3 wolf moon ugh intelligentsia DIY synth hot chicken 8-bit.
+					</Card>
+					<Card mnf>
+							<h2>MNF</h2>Lorem ipsum dolor amet cliche umami hell of, pork belly master cleanse biodiesel air plant. Quinoa tumblr VHS kogi microdosing normcore. Portland paleo normcore kinfolk viral bitters, mlkshk chartreuse ennui photo booth. Brooklyn master cleanse shoreditch, marfa williamsburg hashtag heirloom activated charcoal 3 wolf moon ugh intelligentsia DIY synth hot chicken 8-bit.
+					</Card>
+			</Flex>
+	));
