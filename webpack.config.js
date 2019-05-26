@@ -35,7 +35,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'dist/'),
 		publicPath: '',
-		filename: 'rinse.js',
+		filename: 'odin.js',
 		libraryTarget: 'umd',
 	},
 };
