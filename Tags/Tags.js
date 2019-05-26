@@ -7,45 +7,42 @@ const animatedCss = css`
 `
 
 const primaryCss = css`
-		background-color: #008bf8;
-		border: outset #008bf8;
+    background-color: #008bf8;
     color: #fff;
 `
 
 const infCss = css`
 		background-color: #e500ce;
-		border: outset #e500ce;
 		color: #fff;
 `
 
 const matCss = css`
 		background-color: #e50003;
-		border: outset #e50003;
 		color: #fff;
 `
 
 const datCss = css`
 		background-color: #00e557;
-		border: outset #00e557;
 		color: #fff;
 `
 
 const mnfCss = css`
 		background-color: #161616;
-		border: outset #161616;
 		color: #fff;
 `
 
-const StyledCard = styled.div`
-    width: ${props => (props.big ? '450px' : '300px')};
-    padding: 15px;
+const StyledTags = styled.div`
+		font-family: Arial;
+		font-size: 12px;
+		font-weight: bold;
+		position: relative !important;
+		float: left;
+		padding: 1em 1em;
+		margin: 0 1em 1em 0;
     opacity: 0;
     transform: translateY(50px);
-    transition: 250ms all ease-in-out;
-    margin: ${props => (props.noMargin ? 0 : '15px')};
-		box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 1);
-		border-radius: 0.01em;
-		font-family: Arial;
+    transition: 50ms all ease-in-out;
+		border-radius: 10px;
     ${props => props.animated && animatedCss}
 		${props => props.primary && primaryCss}
 		${props => props.inf && infCss}
@@ -54,7 +51,7 @@ const StyledCard = styled.div`
 		${props => props.mnf && mnfCss}
 `
 
-class Card extends React.Component {
+class Tags extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -90,4 +87,4 @@ class Card extends React.Component {
     }
 }
 
-export default Card
+export default Tags
