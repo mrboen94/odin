@@ -8,31 +8,26 @@ const animatedCss = css`
 
 const primaryCss = css`
 		background-color: #008bf8;
-		border: outset #008bf8;
     color: #fff;
 `
 
 const infCss = css`
 		background-color: #e500ce;
-		border: outset #e500ce;
 		color: #fff;
 `
 
 const matCss = css`
 		background-color: #e50003;
-		border: outset #e50003;
 		color: #fff;
 `
 
 const datCss = css`
 		background-color: #00e557;
-		border: outset #00e557;
 		color: #fff;
 `
 
 const mnfCss = css`
 		background-color: #161616;
-		border: outset #161616;
 		color: #fff;
 `
 
